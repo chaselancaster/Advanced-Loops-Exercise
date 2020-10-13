@@ -72,5 +72,11 @@ amazonBasket = {
 }
 
 function checkBasket(basket, lookingFor) {
-
+  for (item in basket) {
+    if (item === lookingFor) {
+      return `${lookingFor} is in the basket!`
+    } else {
+      return "That item is not in your basket"
+    }
+  }
 }
