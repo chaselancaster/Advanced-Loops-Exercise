@@ -43,7 +43,13 @@ function biggestNumberInArray(arr) {
 }
 
 function biggestNumberInArray2(arr) {
-
+  let biggestNum = 0
+  arr.forEach(num => {
+    if (num > biggestNum) {
+      biggestNum = num
+    }
+  })
+  return biggestNum
 }
 
 function biggestNumberInArray3(arr) {
