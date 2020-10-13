@@ -33,7 +33,13 @@ const array2 = ['a', 3, 4, 2] // should return 4
 const array3 = [] // should return 0
 
 function biggestNumberInArray(arr) {
-
+  let biggestNum = 0
+  for (let i = 0; i < arr.length; i++ ) {
+    if (arr[i] > biggestNum) {
+      biggestNum = arr[i]
+    }
+  }
+  return biggestNum
 }
 
 function biggestNumberInArray2(arr) {
